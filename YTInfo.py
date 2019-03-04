@@ -2,7 +2,7 @@ import  urllib.request
 import json
 
 cid = input("Enter Youtube Channel ID:")
-key = "AIzaSyD2uqDwFSHnl49h7u2Kyco2kMKygRFE8wY"
+key = "YOUR API KEY GOES HERE"
 
 data = urllib.request.urlopen("https://www.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&id="+cid+"&key="+key).read().decode('utf-8')
 
